@@ -39,6 +39,8 @@ return [
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands'            => [
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
+
+
             ],
         ],
 
@@ -117,6 +119,7 @@ return [
     */
     'commands'                     => [
         Telegram\Bot\Commands\HelpCommand::class,
+        App\Console\Commands\StartCommand::class
     ],
 
     /*
